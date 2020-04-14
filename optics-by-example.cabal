@@ -58,7 +58,11 @@ common common
 library
   import: common
   hs-source-dirs: library
-  -- exposed-modules:
+  exposed-modules:
+    -- Exercises in terms of the 'lens' library
+    Lens.Chapter3
+    -- Exercises in terms of the 'optics' library
+    Optics.Chapter3
 
 -------------------------------------------------------------------------------
 executable optics-by-example
