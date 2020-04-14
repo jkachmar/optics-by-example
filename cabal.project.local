@@ -1,8 +1,8 @@
-# Example 'cabal.project.local'.
-#
-# This file has since been added to the '.gitignore', and has only been
-# included as an example of what a useful local development configuration may
-# look like.
+-- Example 'cabal.project.local'.
+--
+-- This file has since been added to the '.gitignore', and has only been
+-- included as an example of what a useful local development configuration may
+-- look like.
 
 optimization: False
 jobs: $ncpus
