@@ -28,6 +28,7 @@ common common
     -Weverything
     -Wno-missing-exported-signatures
     -Wno-missing-import-lists
+    -Wno-missing-export-lists
     -Wno-missed-specialisations
     -Wno-all-missed-specializations
     -Wno-unsafe
@@ -38,11 +39,13 @@ common common
   default-extensions:
     NoImplicitPrelude
     OverloadedStrings
+    ScopedTypeVariables
 
   build-depends:
     -- Alternative prelude
       relude ^>= 0.6
-    -- Convenient libraries to keep around, included with 
+    -- Convenient libraries to keep around that are included with GHC anyway
+    , base
     , bytestring
     , text
     -- 'lens'-based stuff
@@ -61,8 +64,10 @@ library
   exposed-modules:
     -- Exercises in terms of the 'lens' library
     Lens.Chapter3
+    Lens.Chapter4
     -- Exercises in terms of the 'optics' library
     Optics.Chapter3
+    Optics.Chapter4
 
 -------------------------------------------------------------------------------
 executable optics-by-example
