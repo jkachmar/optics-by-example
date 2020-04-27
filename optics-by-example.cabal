@@ -14,7 +14,7 @@ license:
 license-file:
   LICENSE
 author:
-  chessai
+  jkachmar
 build-type:
   Simple
 extra-source-files:
